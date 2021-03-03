@@ -1,0 +1,92 @@
+.institutions-wrapper {
+    hr {
+        margin: 30px 0;
+    }
+    .search {
+        form {
+            display: flex;
+            align-items: flex-end;
+            .input-box {
+                display: flex;
+                flex-direction: column;
+                margin: 0 10px;
+                input {
+                    height: 30px;
+                    margin-top: 15px;
+                }   
+            }
+            .button {
+                width: 104px;
+                background-color: #FF851B;
+                border-radius: 4px;
+                height: 38px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+            }
+        }
+    }
+    .results {
+        .button {
+            width: 190px;
+            background-color: #FF851B;
+            border-radius: 4px;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .table {
+            .menu {
+                background-color: #FF851B;
+                color: #fff;
+                padding: 0 8px;
+                cursor: pointer;
+            }
+            table th , table td{
+                text-align: center;
+            }
+            th {
+                background: #FF851B;
+                color: #fff;
+                padding: 10px;
+                border-radius: 3px;
+            
+            }
+            .pagination {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                list-style: none;
+            }
+              
+            .pagination li:hover{
+                cursor: pointer;
+            }
+            .pagination-container {
+                width: 70%;
+                float:left;
+            }
+            .pagination li span {
+                position: relative;
+                float: left;
+                padding: 6px 12px;
+                margin-left: -1px;
+                line-height: 1.42857143;
+                color: #337ab7;
+                text-decoration: none;
+                background-color: #fff;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+

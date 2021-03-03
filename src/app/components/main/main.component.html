@@ -1,0 +1,27 @@
+<div class="main-wrapper">
+    <div class="sidebar">
+        <ul>
+            <li routerLink="/institutions">
+                <a>
+                    <!-- <svg>
+                        <use [attr.xlink:href]="icons + 'home.svg'"></use>
+                    </svg> -->
+                    <img [src]="icons + 'home.svg'" />
+                    <p>დაწესებულებები</p>
+                </a>
+            </li>
+            <li routerLink="/users">
+                <a>
+                    <!-- <svg>
+                        <use [attr.xlink:href]="icons + 'user.svg'"></use>
+                    </svg> -->
+                    <img [src]="icons + 'user.svg'" />
+                    <p>მომხმარებლები</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

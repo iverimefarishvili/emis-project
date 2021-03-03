@@ -1,0 +1,19 @@
+<div class="view-wrapper">
+    <h1>პერსონალის ინფორმაცია</h1>
+    <form>
+        <div class="input-box">
+            <label for="pid">პირადი ნომერი</label>
+            <input type="text" name="pid"
+            [(ngModel)]="personalData.pid"
+            readonly
+            >
+        </div>
+        <div class="input-box">
+            <label for="name">სახელი</label>
+            <input type="text" name="name"
+            [(ngModel)]="personalData.name"
+            readonly
+            >
+        </div>
+    </form>
+</div>

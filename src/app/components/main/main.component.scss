@@ -1,0 +1,26 @@
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    .sidebar { 
+        width: 200px;
+        background-color: #FF851B;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        ul {
+            padding: 20px;
+            li {
+                height: 70px;
+                list-style-type: none;
+                outline: none;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    display: flex;
+                }
+            }
+        }
+    }
+    .content {
+        width: calc(100% - 200px);
+        padding: 40px;
+    }
+}

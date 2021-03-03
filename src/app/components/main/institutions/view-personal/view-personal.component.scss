@@ -1,0 +1,26 @@
+.view-wrapper {
+    form {
+        display: flex;
+        align-items: flex-end;
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            margin: 0 10px;
+            input {
+                height: 30px;
+                margin-top: 15px;
+            }   
+        }
+        .button {
+            cursor: pointer;
+            padding: 0px 20px;
+            background-color: #FF851B;
+            border-radius: 4px;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+    }
+}

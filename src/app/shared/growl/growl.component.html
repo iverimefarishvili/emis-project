@@ -1,0 +1,7 @@
+<div [@growlState] *ngIf="display" class="growl" [ngClass]="type">
+  <img [src]="iconPath + 'error.png'" class="error-icon">
+  <p>{{message}}</p>
+  <span class="exit" (click)="display = false">
+      <img [src]="iconPath + 'close.png'" class="error-icon">
+  </span>
+</div>

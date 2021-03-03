@@ -1,0 +1,26 @@
+<div class="add-wrapper">
+    <h1>დაწესებულების შექმნა</h1>
+    <form>
+        <div class="input-box">
+            <label for="id">საიდენტიფიკაციო</label>
+            <input type="text" name="id"
+            [(ngModel)]="institutionData.pid"
+            >
+        </div>
+        <div class="input-box">
+            <label for="name">დასახელება</label>
+            <input type="text" name="name"
+            [(ngModel)]="institutionData.name"
+            >
+        </div>
+        <div class="input-box">
+            <label for="number">საკონტაქტო ნომერი</label>
+            <input type="text" name="number"
+            [(ngModel)]="institutionData.number"
+            >
+        </div>
+        <div class="button" (click)="createInstitution()">
+            შექმნა
+        </div>
+    </form>
+</div>

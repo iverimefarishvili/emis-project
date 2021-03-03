@@ -1,0 +1,66 @@
+<div class="institutions-wrapper">
+    <h1>დაწესებულებები</h1>
+    <div class="search">
+        <form>
+            <div class="input-box">
+                <label for="id">საიდენტიფიკაციო</label>
+                <input type="text" name="id"
+                [(ngModel)]="identification"
+                >
+            </div>
+            <div class="input-box">
+                <label for="name">დასახელება</label>
+                <input type="text" name="name"
+                [(ngModel)]="name"
+                >
+            </div>
+            <div class="button" (click)="searchInstitution()">
+                ძებნა
+            </div>
+        </form>
+    </div>
+    <hr />
+
+    <div class="results" >
+        <div class="button" (click)="router.navigate(['institutions/create'])">დაწესებულების შექმნა</div>
+        <h3>ძებნის შედეგები</h3>
+        <div class="table">
+            <div class="container" >
+                <table class="table" id= "table-id">
+                <thead>
+                    <tr>
+                        <th>საიდენტიფიკაციო</th>
+                        <th>დასახელება</th>
+                        <th>საკონტაქტო</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ng-container *ngFor="let item of tableData"> 
+                        <tr>
+                            <td>{{item.pid}}</td>
+                            <td>{{item.name}}</td>
+                            <td>{{item.number}}</td>
+                            <td class="menu" (click)="editInstitution(item)">edit</td>
+                            <td class="menu" (click)="viewInstitution(item)">view</td>
+                        </tr>
+                    </ng-container>
+                    
+                    <tbody>
+                </table>
+                <div class='pagination-container'>
+                    <nav>
+                        <ul class="pagination">
+                            <ng-container *ngFor="let item of pages">
+                                <li (click)="pageChange(item)">
+                                    <span>{{item}}</span>
+                                </li>
+                            </ng-container>
+                        </ul>
+                    </nav>
+                </div>
+          </div>           
+        </div>
+    </div>
+    
+</div>
+

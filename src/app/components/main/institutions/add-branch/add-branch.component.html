@@ -1,0 +1,20 @@
+<div class="add-wrapper">
+    <h1>ფილიალის შექმნა</h1>
+    <form>
+        <div class="input-box">
+            <label for="address">მისამართი</label>
+            <input type="text" name="address"
+            [(ngModel)]="branchData.address"
+            >
+        </div>
+        <div class="input-box">
+            <label for="manager_name">მენეჯერის სახელი</label>
+            <input type="text" name="manager_name"
+            [(ngModel)]="branchData.manager_name"
+            >
+        </div>
+        <div class="button" (click)="createBranch()">
+            შექმნა
+        </div>
+    </form>
+</div>
